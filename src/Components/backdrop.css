@@ -1,0 +1,8 @@
+.back-cont {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+}

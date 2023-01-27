@@ -1,0 +1,59 @@
+.todo-cont {
+  width: 30rem;
+  background: #ecedf6;
+  padding: 1.5rem 1rem;
+  border-radius: 6px;
+  color: #646681;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 100;
+}
+
+.todo-props {
+  width: 100%;
+}
+
+.todo-props label {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.todo-props input,
+.todo-props select {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: none;
+}
+
+.todo-actions {
+  margin-top: 2rem;
+}
+
+.todo-actions button {
+  background: #cccdde;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  margin-right: 0.5rem;
+  color: #646681;
+
+  font-size: 1rem;
+}
+
+.todo-actions button:nth-child(1) {
+  background: #646ff0;
+  color: white;
+}
+
+.todo-actions button:hover {
+  cursor: pointer;
+}
