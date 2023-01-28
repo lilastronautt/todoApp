@@ -2,7 +2,7 @@
   width: 100%;
   background: #ecedf6;
   border-radius: 10px;
-  overflow:scroll;
+  overflow-y:scroll;
   margin: 1rem 0;
   padding: 1.2rem;
 }
