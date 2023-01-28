@@ -1,6 +1,6 @@
 .cont {
-  height: 10rem;
   width: 45rem;
+  max-width:90%;
   margin: 2.2rem auto;
 }
 
