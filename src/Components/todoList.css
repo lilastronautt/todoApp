@@ -98,12 +98,12 @@ ul {
   display: flex;
   align-items: center;
   opacity: 0;
-  transform: translateY(10rem);
+  transform: translateY(10%);
 }
 
 .show {
   opacity: 1;
-  transform: translateY(0rem);
+  transform: translateY(0%);
   z-index: 1000;
 }
 
