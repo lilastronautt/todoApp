@@ -133,7 +133,7 @@ const App = () => {
       }}
     >
       <div className="cont">
-        <h1>TODO LIST</h1>
+        <h1>TO DO LIST</h1>
         <div className="behv-cont">
           <div onClick={openAddTask}>Add Task</div>
           <select onClick={filterDataHandler}>
