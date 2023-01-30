@@ -1,10 +1,11 @@
 .todo-cont {
   width: 30rem;
+  max-width: 90%;
   background: #ecedf6;
   padding: 1.5rem 1rem;
   border-radius: 6px;
   color: #646681;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
