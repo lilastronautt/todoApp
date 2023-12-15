@@ -13,7 +13,7 @@ const TodoList = (props) => {
         const date = el.date.toLocaleString();
 
         const onDeleteTodo = () => {
-          ctx.deleteTodo(el.name);
+          ctx.deleteTodo(i);
         };
 
         const statusUpdateHandler = () => {

@@ -62,8 +62,8 @@ const App = () => {
     setFilterCond(event.target.value);
   };
 
-  const deleteTodo = (deleteList) => {
-    setData((prev) => prev.filter((el) => el.name !== deleteList));
+  const deleteTodo = (index) => {
+    setData((prev) => prev.filter((el,i) => i !== index));
     setShowDel(true);
     setTimeout(() => {
       setShowDel(false);
