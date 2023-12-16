@@ -62,17 +62,17 @@ const App = () => {
     setFilterCond(event.target.value);
   };
 
-  const deleteTodo = (deleteList) => {
-    setData((prev) => prev.filter((el) => el.name !== deleteList));
+  const deleteTodo = (index) => {
+    setData((prev) => prev.filter((el,i) => i !== index));
     setShowDel(true);
     setTimeout(() => {
       setShowDel(false);
     }, 2500);
   };
 
-  const updateStatus = (updateList) => {
-    let data1 = data.map((el) => {
-      if (el.name === updateList) {
+  const updateStatus = (index) => {
+    let data1 = data.map((el,i) => {
+      if (i === index) {
         el.status = "C";
       }
       return el;
@@ -84,9 +84,9 @@ const App = () => {
     }, 2500);
   };
 
-  const updateStatusTrue = (updateList) => {
-    let data1 = data.map((el) => {
-      if (el.name === updateList) {
+  const updateStatusTrue = (index) => {
+    let data1 = data.map((el,i) => {
+      if (i === index) {
         el.status = "IC";
       }
       return el;
@@ -99,8 +99,8 @@ const App = () => {
   };
 
   const updatetaskData = (obj) => {
-    let data1 = data.map((el) => {
-      if (el.name === selectedTask.name) {
+    let data1 = data.map((el,i) => {
+      if (i === selectedTask.index) {
         el.name = obj.name;
         el.status = obj.status;
         el.date = obj.date;

@@ -13,17 +13,20 @@ const TodoList = (props) => {
         const date = el.date.toLocaleString();
 
         const onDeleteTodo = () => {
-          ctx.deleteTodo(el.name);
+          ctx.deleteTodo(i);
         };
 
         const statusUpdateHandler = () => {
-          ctx.updateStatus(el.name);
+          ctx.updateStatus(i);
         };
 
-        const statusUpdateHandlerTrue = () => ctx.updateStatusTrue(el.name);
+        const statusUpdateHandlerTrue = () =>{
+          console.log(i);
+          ctx.updateStatusTrue(i);
+        }
 
         const updateTodoList = () => {
-          ctx.updateTodoList({ name: el.name, status: el.status });
+          ctx.updateTodoList({ index: i, status: el.status });
         };
 
         return (
